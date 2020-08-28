@@ -1,6 +1,18 @@
 spring:
   main:
     allow-bean-definition-overriding: true
+  thymeleaf:
+    cache: true
+    encoding: utf-8
+    enabled: true
+    prefix: classpath:/static/
+    suffix: .html
+    datasource:
+      url: jdbc:mysql://localhost:3306/soul?useUnicode=true&characterEncoding=UTF-8&useSSL=false&autoReconnect=true&failOverReadOnly=false&&serverTimezone=UTC
+      username: root
+      password: 12abAB
+      dbcp2:
+        driver-class-name: com.mysql.jdbc.Driver
 
 management:
   health:

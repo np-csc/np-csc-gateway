@@ -8,9 +8,11 @@
     <artifactId>np-csc-gateway</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
+    <properties>
+        <soul.version>2.2.0</soul.version>
+    </properties>
 
     <dependencies>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-webflux</artifactId>
@@ -27,20 +29,20 @@
         <dependency>
             <groupId>org.dromara</groupId>
             <artifactId>soul-spring-boot-starter-gateway</artifactId>
-            <version>2.2.0</version>
+            <version>${soul.version}</version>
         </dependency>
 
         <!--soul data sync start use websocket-->
         <dependency>
             <groupId>org.dromara</groupId>
             <artifactId>soul-spring-boot-starter-sync-data-websocket</artifactId>
-            <version>2.2.0</version>
+            <version>${soul.version}</version>
         </dependency>
 
         <dependency>
             <groupId>org.dromara</groupId>
             <artifactId>soul-spring-boot-starter-client-springmvc</artifactId>
-            <version>2.2.0</version>
+            <version>${soul.version}</version>
         </dependency>
     </dependencies>
 </project>
